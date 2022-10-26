@@ -1,3 +1,10 @@
+$black: #2b2a2c;
+$gray: #6a696b;
+$light-gray: #dedede;
+$white: #ffffff;
+$light-blue: #21aed1;
+$blue: #210af3;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +12,9 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  background: #dedede;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background: $light-gray;
   font-size: 20px;
 }
 
@@ -22,13 +30,13 @@ input {
 
 .app-title {
   text-align: center;
-  color: #2b2a2c;
+  color: $black;
   font-size: 50px;
 }
 
 .btn {
   margin: 20px;
-  color: #ffffff;
+  color: $white;
   border-radius: 10px;
 }
 
@@ -42,20 +50,21 @@ input {
   width: 200px;
   margin: 10px auto;
   padding: 10px;
-  background-color: #21aed1;
+  background-color: $light-blue;
+  // border: bisque 3px solid;
   border-radius: 20px;
-  -webkit-transition: 0.5s;
+
   transition: 0.5s;
 }
 
 .turned {
   background-color: rgb(0, 248, 186);
-  -webkit-transition: 0.5s;
+  //border: lightsteelblue 3px solid;
   transition: 0.5s;
 }
 
 .container {
-  border: 5px solid #210af3;
+  border: 5px solid $blue;
   border-radius: 25px;
   width: 50%;
   min-width: 400px;
